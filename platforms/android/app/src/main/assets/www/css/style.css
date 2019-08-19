@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #598392;
+}
+
+.wrapper {
+  margin: auto;
+  width: 95%;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#clock {
+  font-weight: normal;
+  font-size: 60px;
+  color: #EFF6E0;
+  margin-bottom: 0;
+}
+
+#date {
+  color: #EFF6E0;
+  font-size: 1.1rem;
+  padding-bottom: 9px;
+  border-bottom: 1px solid;
+}
+
+#main-form {
+  margin: auto;
+  margin-top: 20px;
+  color: rgb(209, 60, 60);
+  font-weight: bold;
+  overflow: hidden;
+}
+
+form {
+  display: flex;
+}
+
+form input[type="text"] {
+  padding: 12px;
+  width: 100%;
+  font-size: 1.25em;
+  outline: none;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  flex: 90%;
+  background: #EFF6E0;
+}
+
+form button {
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background: #EFF6E0;
+  color: #BEBEBE;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#clear-button {
+  float: right;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+#clear-button:hover {
+  cursor: pointer;
+}
+
+ul {
+  margin: auto;
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+ul li {
+  list-style: none;
+  background: #EFF6E0;
+  font-size: 1.1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-left: 8px solid #AEC3B0;
+  word-break: break-all;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+li span {
+  padding-left: 10px;
+  padding-right: 10px;
+  flex: 1;
+}
+
+li input[type="checkbox"] {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.remove {
+  border: none;
+  background: #EFF6E0;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #BEBEBE;
+  margin-right: 10px;
+}
+
+form button:hover,
+.remove:hover {
+  cursor: pointer;
+  color: #808080;
+}
+
+.checked {
+  border-left: 8px solid #124559;
+  opacity: .8;
+}
+
+.checked span {
+  text-decoration: line-through;
+  color: #124559;
+}
+ 
+
+/* Media Queries */
+@media (min-width: 750px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1240px) {
+  .wrapper {
+    width: 50%;
+    margin-top: 160px;
+  }
+
+  #main-form {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .wrapper {
+    width: 25%;
+  }
+}
